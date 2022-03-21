@@ -1,0 +1,23 @@
+{
+  "name": "recipis",
+  "version": "1.0.0",
+  "description": "website for recipes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlavador/Recipis.git"
+  },
+  "author": "vince lavador",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlavador/Recipis/issues"
+  },
+  "homepage": "https://github.com/vlavador/Recipis#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.7"
+  }
+}
