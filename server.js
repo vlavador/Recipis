@@ -11,7 +11,7 @@ mongoose.connect(dbURI,{useNewUrlParser:true,useUnifiedToPology:true})
 
 app.get('/add',(req,res)=>{
     const recipe = new Recipe({
-        title:'Adobo para sa pagbabago',
+        title:'tinola para sa pagbabago',
         body: 'Add the new era'
     })
     recipe.save()
@@ -22,4 +22,14 @@ app.get('/add',(req,res)=>{
         .catch((err) =>{
             console.log(err)
         })
+})
+
+app.get('/all-recipes', async (req,res) => {
+ try{
+     const data = await Recipe.find()
+     res.status(200).json(data)
+ }catch(err){
+    console.log(err)
+  
+ }
 })
